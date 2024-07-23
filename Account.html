@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Account - Pet Shop</title>
+</head>
+<body>
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <header>
+        <img src="images/baner1.jpeg" alt="Pet Shop Header">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+                <li><a href="Cite.html">Cite</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Your Account</h1>
+        <section class="account-info-grid">
+            <div class="content-background">
+                <h2>Profile</h2>
+                <img src="images/profile.png" alt="Profile Picture" class="profile-picture">
+                <p><strong>Name:</strong> Reza</p>
+                <p><strong>Email:</strong> navid.ballack.13@gmail.com</p>
+                <p><strong>Username:</strong> navidmhm</p>
+                <button onclick="changeProfilePicture()">Change Picture</button>
+                <button onclick="changePassword()">Change Password</button>
+                <button onclick="logout()">Logout</button>
+            </div>
+            <div class="content-background">
+                <h2>Order History</h2>
+                <ul class="order-history">
+                    <li>Order #1234 - $1150.00 - Completed</li>
+                    <li>Order #5678 - $1500.00 - Completed</li>
+                    <li>Order #5678 - $1400.00 - Completed</li>
+                    <li>Order #5678 - $1800.00 - Processing</li>
+                    <li>Order #5678 - $1600.00 - Processing</li>
+                </ul>
+            </div>
+            <div class="content-background">
+                <h2>Billing Information</h2>
+                <p><strong>Payment Method:</strong> Master</p>
+                <p><strong>Card Number:</strong> 3345 - XXXX - XXXX - XX30</p>
+                <p><strong>Address:</strong> 1033 james avenue, Coquitlam, BC</p>
+                <p><strong>Card Holder Name:</strong> Reza KHODDAMMOHAMMADI</p>
+            </div>
+            <div class="content-background">
+                <h2>Loyalty Points</h2>
+                <p><strong>Points:</strong> 1200/5000</p>
+                <p>*Please note that after collecting 3000 points, you will have 50% discount on your next order.</p>
+            </div>
+            <div class="content-background">
+                <h2>Login History</h2>
+                <p><strong>Last Login:</strong> 2024-07-22</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Shop</p>
+    </footer>
+
+    <script>
+        function changeProfilePicture() {
+            document.querySelector('.profile-picture').src = 'images/new-profile.png';
+            alert("Profile picture changed!");
+        }
+
+        function changePassword() {
+            alert("Password change feature is not implemented yet.");
+        }
+
+        function logout() {
+            alert("Logout feature is not implemented yet.");
+        }
+    </script>
+</body>
+</html>

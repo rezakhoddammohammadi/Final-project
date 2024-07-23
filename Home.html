@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home - Pet Shop</title>
+</head>
+<body>
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <header>
+        <img src="images/baner1.jpeg" alt="Pet Shop Header">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+                <li><a href="Cite.html">Cite</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home-content">
+            <img src="images/hero.jpg" alt="Happy Pets" class="hero-image">
+            <div class="home-text content-background">
+                <h1>Welcome to Our Pet Shop! 😺 🐶</h1>
+                <p>We are your friendly neighborhood pet shop, dedicated to bringing you the best selection of pets and pet care products.</p>
+                <p>Our mission is to provide you with healthy, happy pets that will bring joy and companionship to your home.</p>
+                <p>We offer a wide variety of pets, including dogs, cats, and small animals. All of our pets are well-cared for and ready to find their new loving families.</p>
+                <p>In addition to our pets, we offer a full range of pet care products, including food, grooming supplies, and accessories.</p>
+                <p>Join our pet shop community and find your perfect pet today!</p>
+            </div>
+        </div>
+        <section class="info-section">
+            <div class="info-text content-background">
+                <h2>About Us 🐕‍🦺</h2>
+                <p>We are passionate about providing the best care and home for cats and dogs. Our pets are well-cared for and ready to find a new loving family.</p>
+                <p>Our team is passionate about connecting families with the right pets, and we are dedicated to offering healthy, happy dogs and cats that have been carefully selected and cared for. Whether you're looking for a playful puppy, a loyal dog, a cuddly kitten, or a loving cat, we have a variety of breeds and personalities to match your lifestyle and preferences.</p>
+            </div>
+            <img src="images/dog-3343_256.gif" alt="About Us" class="info-image">
+        </section>
+        <section class="info-section">
+            <div class="info-text content-background">
+                <h2>Our Services 🐈</h2>
+                <ul>
+                    <li>Wide variety of cat and dog breeds</li>
+                    <li>Health check-ups and vaccinations</li>
+                    <li>Pet grooming and care services</li>
+                    <li>Health checks and vaccinations for all pets</li>
+                    <li>Expert guidance on choosing the right dog or cat for your home</li>
+                    <li>Ongoing support to ensure your new pet transitions smoothly into your home</li>
+                </ul>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="info-text content-background">
+                <h2>Special Offer 🏷️</h2>
+                <p>Don't miss our limited-time offer! Get up to 50% off on select pet supplies and accessories. Hurry, the offer ends soon!</p>
+                <button class="magic-btn" onclick="revealOffer()">Click to Reveal Your Discount Code!</button>
+                <p id="discountCode" class="hidden">Your Discount Code: PETS2024</p>
+                <a href="Shop.html" class="offer-link">See All Offers</a>
+            </div>
+            <img src="images/Screenshot_9.png" alt="Special Offer" class="info-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Shop</p>
+    </footer>
+
+    <script>
+        function revealOffer() {
+            document.getElementById('discountCode').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

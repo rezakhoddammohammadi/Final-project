@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - Pet Shop</title>
+</head>
+<body>
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <header>
+        <img src="images/baner1.jpeg" alt="Pet Shop Header">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+                <li><a href="Cite.html">Cite</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <div class="contact-form content-background">
+            <h1>Contact Us</h1>
+            <form id="contactForm" action="echo_program_url" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send Message" class="btn-submit">
+            </form>
+            <p id="formResponse" class="form-response"></p>
+        </div>
+        <img src="images/contact2.jpg" alt="Contact Us" class="contact-image">
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Shop</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // FOURM
+            const formData = new FormData(event.target);
+            const entries = formData.entries();
+            let responseText = 'Form Data:<br>';
+
+            for (const entry of entries) {
+                responseText += `${entry[0]}: ${entry[1]}<br>`;
+            }
+
+            // SHOW THE RESULT
+            document.getElementById('formResponse').innerHTML = responseText;
+        });
+    </script>
+</body>
+</html>

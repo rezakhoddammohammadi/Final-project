@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shop - Pet Shop</title>
+</head>
+<body>
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <header>
+        <img src="images/baner1.jpeg" alt="Pet Shop Header">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+                <li><a href="Cite.html">Cite</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Shop</h1>
+        <div class="product-grid">
+            <!-- First Row -->
+            <div class="product">
+                <img src="images/french.png" alt="French Bulldog">
+                <h3>French Bulldog</h3>
+                <p>French bulldogs are good for family atmospheres. They are loving, playful, and make cute noises.</p>
+                <p class="price">$1800</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/labrador.png" alt="Labrador Retriever">
+                <h3>Labrador Retriever</h3>
+                <p>The Labrador retrievers are playful, energetic, and loyal dogs, ideal for almost any living situation.</p>
+                <p class="price">$1500</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/golden.png" alt="Golden Retriever">
+                <h3>Golden Retriever</h3>
+                <p>Gentle and affectionate, great with kids. they are characterised by a gentle and affectionate nature and a striking golden coat.</p>
+                <p class="price">$1900</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <!-- Second Row -->
+            <div class="product">
+                <img src="images/german.png" alt="German Shepherd">
+                <h3>German Shepherd</h3>
+                <p>High-energy and protective, highly intelligent, and requires lots of mental stimulation.</p>
+                <p class="price">$1700</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/beagle.png" alt="Beagle">
+                <h3>Beagle</h3>
+                <p>Known for their floppy ears and colorful coats, loveable, happy, and curious.</p>
+                <p class="price">$1200</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Maine_Coon_Cat.png" alt="Maine Coon Cat">
+                <h3>Maine Coon Cat</h3>
+                <p>Weighs up to 20 pounds, friendly, great with kids, and known for their intelligence.</p>
+                <p class="price">$1300</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <!-- Third Row -->
+            <div class="product">
+                <img src="images/Devon_Rex.png" alt="Devon Rex">
+                <h3>Devon Rex</h3>
+                <p>Fun-loving breed with an attitude, known for being loyal and always by your side.</p>
+                <p class="price">$1400</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Exotic_Shorthair.png" alt="Exotic Shorthair">
+                <h3>Exotic Shorthair</h3>
+                <p>Squishy, soft, and cuddly, similar to Persian cats, quiet breed, perfect for cat naps.</p>
+                <p class="price">$1600</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/Persian.png" alt="Persian">
+                <h3>Persian</h3>
+                <p>Considered the epitome of feline beauty, easy-going nature, and needs daily exercise.</p>
+                <p class="price">$1500</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Shop</p>
+    </footer>
+
+    <script>
+        function addToCart(button) {
+            button.innerText = 'Added!';
+            alert('Item added to cart!');
+        }
+    </script>
+</body>
+</html>
